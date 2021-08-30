@@ -1,24 +1,29 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ApiContext } from "../../state/GlobalContext";
 import DataTable from "./DataTable";
+import { fetchUserData } from '../../hooks/FetchUser';
 
 interface DataProps {
-  setData: any;
+  setData:  React.Dispatch<any>;
 }
 
 const UserData = ({ setData }: DataProps) => {
+  const data: any = useContext(ApiContext);
   return (
     <div className="UserData">
-      <DataTable />
+
+      {data && data.length > 0 ? <DataTable /> : <div>Loading...</div>}
 
       <div className="UserData--Routes">
         <Link to="/Answers">
-          <button> Go to Answers </button>
+          <button> Answers </button>
         </Link>
 
         <Link to="/">
-          <button>Return Home</button>
+          <button>Home</button>
         </Link>
-        <button> Refresh API</button>
+        <button onClick= {() => fetchUserData(setData)}> Refresh</button>
       </div>
     </div>
   );

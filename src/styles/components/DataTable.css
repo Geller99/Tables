@@ -4,58 +4,80 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     background-color: blanchedalmond ; 
+    height: 100%;
+    overflow-y: scroll;
+    width: 99.9%;
 
 }
 
 .UserData--Routes {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 20%;
     align-items: center;
 }
 
 
 
 table {
+    
     border-spacing: 0;
-    border: 1px solid black;
+    border: 5px solid black;
     
 }
 
-
-
-
-th, td {
-    margin: 0;
-    padding: 0.5rem;
-    border-bottom: 5px solid black;
-    border-right: 1px solid black;
-}
-
-th, td :last-child {
-    border-right: 0;
-  }
-
-th {
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    
-}
-
-.tr {
-    border: 1px solid black ;
-    
-}
-
-.profilepictures {
-
-}
 
 button {
-    background: transparent;
-    border: 1px solid black;
-    color: brown;
+    background: black;
+    color: wheat;
     border-radius: 5px;
+    height: 40px;
+    width: 90px;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+tr img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 5px solid #E6E7E8;
+}
+
+th, td {
+    border: 1px solid #dddd;
+    padding: 10px 20px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.custom--tr {
+    height: 80px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(20px);
+
+}
+
+tr {
+    height: 80px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
 }

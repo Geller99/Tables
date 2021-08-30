@@ -6,6 +6,8 @@ import UserData from "./UserData/UserData";
 import { ApiContext } from "../state/GlobalContext";
 import { fetchUserData } from '../hooks/FetchUser';
 
+/*  Wrapper Component for Routing and React Context API */
+
 const Router: React.FC = () => {
   const [data, setData] = useState<any>([]);
 
@@ -25,7 +27,9 @@ const Router: React.FC = () => {
           <Home />{" "}
         </Route>
         <Route path="/Answers" component={Answers} />
-        <Route path="/UserData" component={UserData}/>
+        <Route path="/UserData" component={UserData}>
+          <UserData setData = {setData} />
+        </Route>
       </Switch>
     </ApiContext.Provider>
   );

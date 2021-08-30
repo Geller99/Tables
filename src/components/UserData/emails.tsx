@@ -7,7 +7,7 @@ const UserEmail: React.FC = () => {
   return (
     <tr className='emails'>
       {data && data.map((element: any) => {
-          return <tr> {element.email} </tr>
+          return <tr className='custom--tr'> {element.email} </tr>
         })}
     </tr>
   )
