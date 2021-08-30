@@ -9,7 +9,7 @@ const UserName: React.FC = () => {
     <tr>
       {
         data && data.map((element: any) => {
-          return <tr className='custom--tr'> {element.login.username} </tr>
+          return <tr key={element.login.username} className='custom--tr'> {element.login.username} </tr>
         })
        }
     </tr>

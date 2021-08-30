@@ -9,7 +9,7 @@ const ProfilePicture: React.FC = () => {
     <tr className='profilepictures'>
       {data &&
         data.map((element: any) => {
-          return <tr className='img'><img alt={element.name} src={element.picture.medium} /> </tr>;
+          return <tr key={element.email} className='img'><img alt={element.name} src={element.picture.medium} /> </tr>;
         })}
     </tr>
   );

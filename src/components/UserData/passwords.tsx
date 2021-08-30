@@ -8,7 +8,7 @@ const Passwords: React.FC = () => {
     <tr>
       {
         data && data.map((element: any) => {
-          return <tr className='custom--tr'> {element.login.password} </tr>
+          return <tr key={element.login.password} className='custom--tr'> {element.login.password} </tr>
         })
        }
     </tr>

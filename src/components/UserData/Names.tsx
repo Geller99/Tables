@@ -9,7 +9,7 @@ const Names = () => {
       {data &&
         data.map((element: any) => {
           return (
-            <tr className='custom--tr'>
+            <tr key={element.name.first} className='custom--tr'>
               {" "}
               {element.name.title} {element.name.first} {element.name.last}{" "}
             </tr>
