@@ -1,23 +1,22 @@
 import axios from "axios";
 
 /* Fetches data from API and logs with error handling */
-import React, { useEffect, useState } from "react";
 
-export const useAxios = (url: string) => {
-  
-  const [data, setData] = useState<[]>([]);
+export const fetchUserData = (setData:any) => {
+  const url = `https://randomuser.me/api/?results=20`;
 
-  useEffect(() => {
-    axios(url)
-      .then(response => {
+  const result = axios
+    .get(url)
+    .then((response) => {
+      if (response.data.results.length > 0) {
         setData(response.data.results);
-        console.log(data)
-      })
-    .catch(error => {
+      }
+    })
+    .catch((error) => {
       if (error.response) {
         console.log(error.response.status);
       }
-    })
-  })
-  
-} 
+    });
+
+  return result;
+};

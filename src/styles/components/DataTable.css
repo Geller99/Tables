@@ -1,9 +1,27 @@
 
 
+.UserData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: blanchedalmond ; 
+
+}
+
+.UserData--Routes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 table {
     border-spacing: 0;
     border: 1px solid black;
+    
 }
 
 
@@ -19,3 +37,25 @@ th, td {
 th, td :last-child {
     border-right: 0;
   }
+
+th {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    
+}
+
+.tr {
+    border: 1px solid black ;
+    
+}
+
+.profilepictures {
+
+}
+
+button {
+    background: transparent;
+    border: 1px solid black;
+    color: brown;
+    border-radius: 5px;
+}
