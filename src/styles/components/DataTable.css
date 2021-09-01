@@ -4,12 +4,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     background-color: blanchedalmond ; 
     height: 100%;
     overflow-y: scroll;
     width: 99.9%;
 
+}
+
+.UserData--Routes {
+  justify-self: flex-start;
+  display: flex;
+  flex-direction: row;
 }
 
 .Loading{
@@ -31,6 +37,7 @@
   margin: 25px 0;
   font-size: 0.9em;
   min-width: 200px;
+  max-width: 600px;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
