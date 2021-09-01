@@ -5,20 +5,20 @@ import { reactAnswers, graphQLAnswers } from "./QA";
 const Answers: React.FC = () => {
   return (
     <div className="Answers">
-      <h1>Answers from the React Questionnaire</h1>
+      <p className='Topic'>Answers from the React Questionnaire</p>
 
       <div className="React--QA">
-        <h3>React</h3>
+        <h2>React</h2>
         <p>What are props in React?</p>
         {reactAnswers.answer_1}
         <p>What is state in React?</p>
-        {reactAnswers.answer_2};
+        {reactAnswers.answer_2}
         <p>What is the difference between state and props?</p>
-        {reactAnswers.answer_3};
+        {reactAnswers.answer_3}
       </div>
 
       <div className="GraphQL--QA">
-        <h3>GraphQL</h3>
+        <h2>GraphQL</h2>
         <p> How does GraphQL utilize the data-loading process? </p>
         {graphQLAnswers.answer_1}
         <p> Is GraphQL a Database Technology? </p>
