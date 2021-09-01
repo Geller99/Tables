@@ -29,7 +29,7 @@ const Tbody = () => {
 
               <td key={element.login.password} className="custom--tr">
                 <div className='img'>
-                  <img alt={element.name} src={element.picture.medium} />{" "}
+                  <img alt="" src={element.picture.medium} />{" "}
                 </div>
               </td>
             </tr>

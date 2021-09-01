@@ -1,22 +1,19 @@
-import React from "react";
-import Tbody from "./Tbody";
+import React from 'react'
+
+import Headers from './Headers'
+import Rows from './Rows'
+
+import { columns, ColumnContext } from './columns'
 
 const DataTable: React.FC = () => {
   return (
-    <table className="content-table">
-      <thead>
-        <tr>
-          <th> Name </th>
-          <th> Email </th>
-          <th> Username </th>
-          <th> Password </th>
-          <th> Image </th>
-        </tr>
-      </thead>
+    <ColumnContext.Provider value={columns}>
+      <table className="content-table">
+        <Headers />
+        <Rows />
+      </table>
+    </ColumnContext.Provider>
+  )
+}
 
-      <Tbody />
-    </table>
-  );
-};
-
-export default DataTable;
+export default DataTable
