@@ -27,7 +27,7 @@ const Router: React.FC = () => {
           <Home />{" "}
         </Route>
         <Route path="/Answers" component={Answers} />
-        <Route path="/UserData" component={UserData}>
+        <Route path="/UserData">
           <UserData setData = {setData} />
         </Route>
       </Switch>

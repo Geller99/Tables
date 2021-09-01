@@ -51,7 +51,7 @@ tr img {
 th, td {
     border: 1px solid #dddd;
     font-size: 90%;
-    transform: translateX(2px);
+
     padding-left: 10px ;
 }
 
@@ -64,7 +64,6 @@ table {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transform: translateY(20px);
     width: 60%;
 
 }
