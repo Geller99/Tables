@@ -1,14 +1,9 @@
 import React from "react";
 import Tbody from "./Tbody";
 
-
-
-
-
 const DataTable: React.FC = () => {
-
   return (
-    <table className='table'>
+    <table className="content-table">
       <thead>
         <tr>
           <th> Name </th>
@@ -18,11 +13,8 @@ const DataTable: React.FC = () => {
           <th> Image </th>
         </tr>
       </thead>
-      
-        
-        <Tbody/>
-        
-     
+
+      <Tbody />
     </table>
   );
 };

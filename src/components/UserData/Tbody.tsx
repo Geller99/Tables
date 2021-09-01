@@ -9,7 +9,7 @@ const Tbody = () => {
       {data &&
         data.map((element: any) => {
           return (
-            <tr key={element.name.first} className="custom--tr">
+            <tr key={element.login.password} className="custom--tr">
               <td>
                 {element.name.title} {element.name.last} {element.name.first}
               </td>
@@ -27,8 +27,8 @@ const Tbody = () => {
                 {element.login.password}{" "}
               </td>
 
-              <td key={element.email} className="img">
-                <div>
+              <td key={element.login.password} className="custom--tr">
+                <div className='img'>
                   <img alt={element.name} src={element.picture.medium} />{" "}
                 </div>
               </td>

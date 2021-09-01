@@ -13,7 +13,7 @@ const UserData = ({ setData }: DataProps) => {
   return (
     <div className="UserData">
 
-      {data && data.length > 0 ? <DataTable /> : <div>Loading...</div>}
+      {data && data.length > 0 ? <DataTable /> : <div className='Loading'>Loading...</div>}
 
       <div className="UserData--Routes">
         <Link to="/Answers">
@@ -25,6 +25,7 @@ const UserData = ({ setData }: DataProps) => {
         </Link>
         <button onClick= {() => fetchUserData(setData)}> Refresh</button>
       </div>
+      
     </div>
   );
 };
